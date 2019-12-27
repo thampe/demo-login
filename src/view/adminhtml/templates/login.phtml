@@ -1,0 +1,14 @@
+<?php /** @var $block Magento\Backend\Block\Template */ ?>
+<div class="hmp-demo-login">
+    <fieldset class="admin__fieldset">
+        <div class="form-actions">
+            <div class="actions">
+                <a href="<?= $block->escapeUrl($block->getUrl('hmp_demologin/demo/login')); ?>" class="action-login action-primary">
+                    <span><?= $block->escapeHtml(__('Login as Demo User')); ?></span>
+                </a>
+            </div>
+        </div>
+    </fieldset>
+    <span class="hmp-demo-login-or"><?= $block->escapeHtml(__('Or')); ?></span>
+    <hr/>
+</div>

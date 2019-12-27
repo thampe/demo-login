@@ -1,0 +1,33 @@
+{
+    "name": "hampe/demo-login",
+    "description": "A tiny magento module which allows you to login into the magento backend without giving credentials out. The most common use-case is probably a demo installation for a module or a theme.",
+    "homepage": "https://hampe.dev/m2/demo-login",
+    "keywords":    ["magento2", "demo", "login", "password less"],
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Hampe",
+            "homepage": "http://github.com/thampe",
+            "email": "github@hampe.co"
+        }
+    ],
+    "require": {
+        "magento/framework": "~102.0.0"
+    },
+    "autoload": {
+        "files": [ "src/registration.php" ],
+        "psr-4": {
+            "Hampe\\DemoLogin\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require-dev": {
+        "magento/magento-coding-standard": "^4.0"
+    }
+}
